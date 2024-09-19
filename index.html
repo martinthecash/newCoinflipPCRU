@@ -131,7 +131,7 @@
         font-size: 41px;
         color: white;
         margin-left: 1px;
-        text-shadow: 0 0 10px #black, 0 0 20px #black, 0 0 30px #black, 0 0 40px #black;
+        text-shadow: 0 0 10px #black, 0 0 20px #black, 0 0 30px #black, 0 0 40px #black; /
     }
     #notification {
         width: 50%;
@@ -231,6 +231,7 @@
     </div>
     <div id="container3D"></div>
     <button id="flipButton">БРОСИТЬ</button>
+
     <div id="resultText"></div>
     <div id="nsgocio-container">
 </div>
@@ -303,8 +304,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-        const flipButton = document.getElementById("flipButton");    
-        const returnButton = document.getElementById("returnButton");    
+        const flipButton = document.getElementById("flipButton");  
         const flipSound = new Audio('flip.mp3'); // Path to your sound file
 
         returnButton.addEventListener("touchstart", (e) => {
