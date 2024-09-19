@@ -131,7 +131,7 @@
         font-size: 41px;
         color: white;
         margin-left: 1px;
-        text-shadow: 0 0 10px #black, 0 0 20px #black, 0 0 30px #black, 0 0 40px #black;
+        text-shadow: 0 0 10px #black, 0 0 20px #black, 0 0 30px #black, 0 0 40px #black; /
     }
     #notification {
         width: 50%;
@@ -220,18 +220,17 @@
     <div id="notification" class="hidden">
     <img src="tg.svg" alt="Telegram Icon" id="notification-icon">
     <div id="notification-content">
-        <h4>1WIN SIGNALS</h4>
+        <h4>GOODWIN</h4>
         <p>Ты выиграл ваучер!</p>
     </div>
 </div>
     <div class="marquee">
         <p>
-            <span class="text-segment">1WIN SIGNALS</span>
+            <span class="text-segment">GOODWIN</span>
         </p>
     </div>
     <div id="container3D"></div>
     <button id="flipButton">БРОСИТЬ</button>
-    <button id="returnButton">Вернуться</button>
     <div id="resultText"></div>
     <div id="nsgocio-container">
 </div>
@@ -304,19 +303,8 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-        const flipButton = document.getElementById("flipButton");    
-        const returnButton = document.getElementById("returnButton");    
+        const flipButton = document.getElementById("flipButton");  
         const flipSound = new Audio('flip.mp3'); // Path to your sound file
-
-        returnButton.addEventListener("touchstart", (e) => {
-            e.preventDefault(); // Предотвратить стандартное поведение для touch (скроллинг и т.д.)
-            returnButton.classList.add("active");
-        });
-    
-        returnButton.addEventListener("touchend", (e) => {
-            returnButton.classList.remove("active");
-            location.href = 'https://nickyylable.github.io/lasthere/'; // Вызов функции при завершении касания
-        });
             
         document.getElementById("flipButton").addEventListener("click", () => {
             if (coin) {
