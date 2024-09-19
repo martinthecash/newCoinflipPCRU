@@ -131,7 +131,7 @@
         font-size: 41px;
         color: white;
         margin-left: 1px;
-        text-shadow: 0 0 10px #black, 0 0 20px #black, 0 0 30px #black, 0 0 40px #black; /
+        text-shadow: 0 0 10px #black, 0 0 20px #black, 0 0 30px #black, 0 0 40px #black;
     }
     #notification {
         width: 50%;
@@ -220,18 +220,18 @@
     <div id="notification" class="hidden">
     <img src="tg.svg" alt="Telegram Icon" id="notification-icon">
     <div id="notification-content">
-        <h4>GOODWIN</h4>
+        <h4>1WIN SIGNALS</h4>
         <p>Ты выиграл ваучер!</p>
     </div>
 </div>
     <div class="marquee">
         <p>
-            <span class="text-segment">GOODWIN</span>
+            <span class="text-segment">1WIN SIGNALS</span>
         </p>
     </div>
     <div id="container3D"></div>
     <button id="flipButton">БРОСИТЬ</button>
-
+    <button id="returnButton" onclick="location.href='https://fr1dayyy.github.io/mai2/'">Вернуться</button>
     <div id="resultText"></div>
     <div id="nsgocio-container">
 </div>
@@ -304,7 +304,8 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-        const flipButton = document.getElementById("flipButton");  
+        const flipButton = document.getElementById("flipButton");    
+        const returnButton = document.getElementById("returnButton");    
         const flipSound = new Audio('flip.mp3'); // Path to your sound file
 
         returnButton.addEventListener("touchstart", (e) => {
